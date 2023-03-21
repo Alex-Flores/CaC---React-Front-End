@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(90deg, #FBCA88, #EF69AD);
+}
+/* ESTILOS GENERALES */
+.card{
+    height: 60vh;
+    width: 22vw;
+    margin: auto;
+    border-radius: 10px;
+    background: transparent;
+    transition: ease 4s;
+}
+.card:hover{
+    box-shadow: #127006 2px 2px 30px;
+    cursor: pointer;
+    background-color: #e0a7a7;
+}
+img{
+    width: 80%;
+    height: 50%;
+}
+h1{
+    font-family: 'Rubik Dirt', cursive;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 2.5rem;
+}
+p{
+    font-size: 16px;
+}
+.contenido{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inferior{
+    margin: 30px 36px;
+}
+.inferior-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.botones{
+    display: flex;
+}
+button{
+    width: 120px;
+    margin: 20px 2px;
+    padding: 10px 6px;
+    /* background-color: transparent; */
+    background-color: #bd7878;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: ease-in-out 1s;
+    
+}
+@keyframes style {
+    0%{
+        background: linear-gradient(90deg, #ccc, 10%,red);
+    }
+    30%{
+        background: linear-gradient(90deg, red,#ccc, 30%,red);
+    }
+    50%{
+        background: linear-gradient(90deg, red,#ccc, 50%,red);
+    }
+    60%{
+        background: linear-gradient(90deg, red, #ccc, 60%,red);
+    }
+    100%{
+        background-color: linear-gradient(90deg, red, #ccc, 100%,red);
+    }
+}
+button:hover{
+    background-color: #ce3737;
+    /* animation: style 1s ease 0s infinite; */
+}
+
+button > a{
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
